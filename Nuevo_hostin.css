@@ -1,5 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
 
 
 *{
@@ -268,14 +268,15 @@ EL HEADER Y SUS ELEMNTO .-.*/
     display: flex;
     justify-content: flex-end;
     align-items: center; 
-    width: 60%;
+    width: 100%;
   }
 
 
 .h_p_r_img{
-    width: 600px;
-    max-width: 100%;
+    width: 100%;
     height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     
 }
 
