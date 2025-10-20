@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: auto    ;
+    background:#F4F5FF;
+    
+}
+
+header a{
+    display: block;
+    padding: 2rem;
+}
+header img{
+    width: 150px;
+    height: auto;
+}
+
+
+/*MAIN-SSECTION*/
+
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-section{
+    position: relative;
+    background-color: white;
+    width: 470px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgba(74, 65, 65, 0.349);
+    border-radius: 20px;
+
+
+}
+/*h1*/
+.head-section{
+    position: absolute;
+    top: 0%;
+    padding-block-start: 50px;
+    font-size: 18px;
+}
+
+
+
+
+/*formulario*/
+.login-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+
+}
+
+
+.icons a img{
+    display: flex   ;
+    justify-content: centere;
+    align-items: center;
+    z-index: 10;
+    width: 80px;
+    height: 20px;
+    cursor: pointer;
+    border: 1px solid rgba(74, 65, 65, 0.349);
+    border-radius: 10px;
+
+    padding: 1.5rem 5.5rem;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 1rem;
+    padding-block: 20px;
+}
+
+
+.login-form input, button{
+    width: 400px;
+    height: 40px;
+    margin-block: 10px;
+    border: 1px solid rgba(74, 65, 65, 0.349);
+    border-radius: 5px;
+    padding-inline: 10px;
+}
+
+.boton{
+    background-color: #673DE6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+}
+.login-form label{
+    color: rgba(74, 65, 65, 0.726);
+}
+.head-bottom{
+    position: absolute;
+    bottom: 0%;
+    
+    padding-block-end: 50px;
+    font-size: 16px;
+    gap: 1rem;
+
+    text-align: center;
+    justify-content: center;
+}
+
+.head-bottom a, p{
+    padding-block: 1rem;
+    
+}
+
+.head-bottom a{
+    color: #673DE6;
+    
+}
+
+
