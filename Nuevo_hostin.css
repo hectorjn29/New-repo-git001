@@ -1,4 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 
 
@@ -8,7 +9,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "DM Sans", sans-serif;
 }
 
 
@@ -228,7 +229,7 @@ EL HEADER Y SUS ELEMNTO .-.*/
 }
 
 .home-page-left{
-    width: 40%;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -343,11 +344,11 @@ EL HEADER Y SUS ELEMNTO .-.*/
     flex-direction: row;
     
     justify-content: flex-start;
-
+    
     margin-block: 1rem;
     padding-inline: 20px;
     gap: 1rem;
-
+    margin-bottom: 40px;
 }
 
 
@@ -589,27 +590,35 @@ EL HEADER Y SUS ELEMNTO .-.*/
 
 /*sgundo boton*/
 .buttom-content-2{
-    display: inline;
+    
     position: absolute;
     
     
     
 
-    height: 90%;
+    /* height: 90%;
+    display: inline;
     right: 0;
     right: 1px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%); */
     display: none;
     
 }
 
 .buttom-input-2{
+    width: 40px;
+    height: 40px;
+    
+
+
     display: none;
+    justify-content: center;
+    align-items: center;
     border: none;
     background-color:  #1F1346;
     color: white;
-    padding: 1.2rem 1.3rem;
+    /* padding: 1.2rem 1.3rem; */
     border-radius: 100%;
     font-weight: bolder;
     transition: all 60ms ease-in-out;
@@ -647,23 +656,31 @@ EL HEADER Y SUS ELEMNTO .-.*/
         display: flex;
     }
     .search-input-2{
-        position: absolute;
-
         font-size: 24px;
+        /* position: absolute;
+
+        
         right: 0;
         right: 8px;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-50%); */
         
     }
 }
 
 @media screen and (max-width:767px) {
 
+    .search-bar{
+        
+        display: flex;
+        align-items: center;
+    }
+
     .input{
         padding: 1.5rem;
     }
     .buttom-content-2{
+        right: 0;
         padding-right: 10px;
         padding-inline-start: 5px;
         border-left: 1px solid rgba(0, 0, 0, 0.295);
@@ -672,9 +689,9 @@ EL HEADER Y SUS ELEMNTO .-.*/
         border-radius: 50%;
     }
 
-    .search-input-2{
+    /* .search-input-2{
         padding-inline-end: 11px;
-    }
+    } */
 }
 
 
@@ -689,7 +706,7 @@ EL HEADER Y SUS ELEMNTO .-.*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    padding-block: 80px;
     gap: 2rem;
 }
 
@@ -837,7 +854,7 @@ EL HEADER Y SUS ELEMNTO .-.*/
     justify-content: center;
     gap: 2rem;
     
-    padding-block: 20px;
+    padding-block: 80px;
 }
 .title-section{
     width: 100%;
@@ -854,7 +871,7 @@ EL HEADER Y SUS ELEMNTO .-.*/
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    
     gap: 1.5rem;
     flex: 1;
 }
@@ -862,11 +879,12 @@ EL HEADER Y SUS ELEMNTO .-.*/
     
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    top: 0;
+    /* justify-content:space-between ; */
     gap: 10px;
 
     width: 100%;
-    height: 330px;
+    
     
     border-radius: 10px;
     background-color: #f4f5ff;
@@ -874,7 +892,9 @@ EL HEADER Y SUS ELEMNTO .-.*/
     border: 1px solid #d5dfff;
     
 }
-
+/* .carta-contenido-2{
+    height: 108px;
+} */
 
 .but{
     padding: 10px 30px;
@@ -950,7 +970,7 @@ EL HEADER Y SUS ELEMNTO .-.*/
     align-items: center;
     text-align: center;
 
-    padding-block: 20px;
+    padding-block: 80px;
    
     
 }
@@ -981,7 +1001,7 @@ EL HEADER Y SUS ELEMNTO .-.*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-block: 20px;
+    padding-block: 80px;
 }
 
 .content-footer{
@@ -1298,4 +1318,21 @@ hr{
 }
 .pos a:hover{
     color: white;
+}
+
+
+
+
+/*arreglando tamaño de titulo section-media*/
+
+@media screen and (max-width: 560px) {
+    .sect-div-one{
+        width: 90%;
+    }
+    .title{
+        gap: 1rem;
+    }
+    .title p{
+        width: 100%;
+    }
 }
